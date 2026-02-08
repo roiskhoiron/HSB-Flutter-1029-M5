@@ -1,0 +1,19 @@
+{
+  "es": [
+    "personalInformation",
+    "email",
+    "name",
+    "enterName",
+    "editProfile",
+    "save"
+  ],
+
+  "id": [
+    "personalInformation",
+    "email",
+    "name",
+    "enterName",
+    "editProfile",
+    "save"
+  ]
+}
