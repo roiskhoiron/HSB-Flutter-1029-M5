@@ -17,6 +17,8 @@ final tripOperationProvider = StateProvider.autoDispose<AsyncValue<void>>(
   (ref) => const AsyncData(null),
 );
 
+// 💎 `TripNotifier` mendemonstrasikan integrasi Riverpod 2.0 yang sangat matang. 
+// Penggunaan `AsyncNotifier` membuat handling loading & error jadi jauh lebih elegan! ⚡🏗️
 class TripNotifier extends AsyncNotifier<List<Trip>> {
   late TripUseCases _useCases;
 

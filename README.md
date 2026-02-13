@@ -1,6 +1,7 @@
 # travel_planner
 
-A new Flutter project.
+// 🚩 Catatan: Codebase-mu sudah sangat profesional, tapi README masih default. 
+// Sayang sekali jika karya sehebat ini tidak dijelaskan fiturnya di sini! 📝✨
 
 ## Getting Started
 

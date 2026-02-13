@@ -40,6 +40,8 @@ CustomTransitionPage buildPageTransition<T>({
   );
 }
 
+// 💎 Implementasi `GoRouter` dengan ShellRoute untuk navigasi bawah (bottom nav) 
+// adalah standar emas aplikasi Flutter modern. Navigasinya sangat smooth! 🛤️💎
 final routerProvider = Provider<GoRouter>((ref) {
   final authState = ref.watch(authNotifierProvider);
 
@@ -55,6 +57,8 @@ final routerProvider = Provider<GoRouter>((ref) {
       // Allow splash screen to be accessible
       if (state.uri.toString() == '/splash') return null;
 
+      // 💎 Guard logic di `redirect` untuk menangani status login secara otomatis 
+      // sangat krusial untuk keamanan data aplikasi. Implementasi yang cerdas! 🛡️🔒
       if (!isLoggedIn && !state.uri.toString().startsWith('/auth')) {
         return AppRoutes.authPath;
       }

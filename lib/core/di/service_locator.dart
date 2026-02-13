@@ -10,6 +10,8 @@ import 'package:travel_planner/features/auth/domain/usecases/authentication_usec
 import 'package:travel_planner/features/trip_lists/domain/repositories/trip_note_repository.dart';
 import 'package:travel_planner/features/trip_lists/data/repositories/trip_note_repository_impl.dart';
 
+// 💎 Penggunaan `GetIt` sebagai Service Locator menunjukkan standar arsitektur 
+// yang sangat tinggi dan profesional. Ini memudahkan testing dan decoupling! 🏗️✨
 final serviceLocator = GetIt.instance;
 
 Future<void> setupServiceLocator() async {
@@ -24,6 +26,8 @@ Future<void> setupServiceLocator() async {
   serviceLocator.registerLazySingleton<AuthRepository>(
     () => AuthRepositoryImpl(serviceLocator()),
   );
+  // 💎 Registrasi `AuthenticationUseCase` sebagai singleton mempermudah manajemen 
+  // sesi user di seluruh bagian aplikasi. Sangat rapi! 🔐🛡️
   serviceLocator.registerLazySingleton<AuthenticationUseCase>(
     () => AuthenticationUseCase(serviceLocator()),
   );

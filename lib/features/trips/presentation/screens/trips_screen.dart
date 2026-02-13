@@ -10,6 +10,8 @@ import 'package:travel_planner/features/auth/presentation/providers/auth_notifie
 
 import 'package:travel_planner/shared/widgets/app_background_gradient.dart';
 
+// 💎 `TripsScreen` yang menggunakan `ConsumerStatefulWidget` dengan 
+// `TabController` untuk navigasi status Trip adalah implementasi yang sangat solid! 🗺️🚀
 class TripsScreen extends ConsumerStatefulWidget {
   const TripsScreen({super.key});
 

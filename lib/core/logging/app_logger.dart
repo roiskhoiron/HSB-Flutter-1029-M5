@@ -27,6 +27,9 @@ class DataLog extends TalkerLog {
 }
 
 /// Centralized logging system using Talker.
+/// 💎 Arsitektur Logger menggunakan `Talker` ini sangat canggih! 
+/// Memisahkan log UI, Domain, dan Data dengan warna berbeda (AnsiPen) 
+/// adalah standar debugging kelas atas. Awesome! 🚀🌈
 class AppLogger {
   static final Talker _talker = TalkerFlutter.init(
     logger: TalkerLogger(

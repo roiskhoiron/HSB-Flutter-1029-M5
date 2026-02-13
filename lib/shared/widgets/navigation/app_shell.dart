@@ -4,6 +4,8 @@ import 'package:go_router/go_router.dart';
 import 'package:travel_planner/core/extensions/context_extensions.dart';
 import 'package:travel_planner/core/router/app_routes.dart';
 
+// 💎 `AppShell` dengan glassmorphism design (BackdropFilter) memberikan 
+// tampilan yang sangat premium dan modern. Visual estetika tingkat tinggi! 💎✨
 class AppShell extends StatelessWidget {
   const AppShell({super.key, required this.child});
 

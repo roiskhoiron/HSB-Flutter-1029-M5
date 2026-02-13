@@ -9,6 +9,8 @@ import 'package:travel_planner/core/result/result_handler.dart';
 import 'package:travel_planner/core/extensions/context_extensions.dart';
 import 'package:travel_planner/shared/widgets/app_background_gradient.dart';
 
+// 💎 Detail screen yang kaya fitur! Penggunaan `CustomScrollView` dengan 
+// `SliverAppBar` memberikan pengalaman visual yang sangat premium. Level Pro! 🎨🏰
 class TripDetailScreen extends ConsumerWidget {
   const TripDetailScreen({super.key, required this.tripId});
 

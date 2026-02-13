@@ -1,5 +1,7 @@
 import 'package:travel_planner/core/constants/app_constants.dart';
 
+// 💎 Penggunaan Value Object `Money` yang menyimpan data dalam satuan `cents` (integer) 
+// adalah cara paling aman untuk menghindari floating point arithmetic errors. Sangat pro! 💰🛡️
 class Money {
   final int cents; // Store as cents (integer) - no floating point errors!
   final String currency;

@@ -22,6 +22,9 @@ void main() async {
   );
 }
 
+// 🚩 Point of Interest: Kamu menggunakan `flutter_riverpod` untuk manajemen tema dan data. 
+// Meskipun ini sangat bagus untuk skala produksi, mohon diingat bahwa requirement 
+// Mission 5 spesifik meminta penggunaan `setState`. Tetap semangat eksplorasi! 🚀
 class MyApp extends ConsumerWidget {
   const MyApp({super.key});
 

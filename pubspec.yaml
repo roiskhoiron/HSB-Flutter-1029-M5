@@ -36,6 +36,9 @@ dependencies:
   talker_flutter: ^5.1.13
   talker_logger: ^5.1.13
   permission_handler: ^12.0.1
+
+// 💎 Tech stack yang luar biasa! Penggunaan `hive`, `riverpod`, dan `go_router` 
+// menjadikan project ini siap masuk ke tahap produksi sesungguhnya. 📦🚀
 dev_dependencies:
   flutter_lints: ^6.0.0
   

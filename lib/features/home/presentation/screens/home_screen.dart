@@ -20,6 +20,8 @@ class HomeScreen extends ConsumerWidget {
     final authState = ref.watch(authNotifierProvider);
     final tripsState = ref.watch(tripsProvider);
 
+    // 💎 Integrasi Riverpod dengan `tripsProvider` sangat responsif. 
+    // Keadaan loading dan error ditangani secara elegan. UX yang hebat! 🚀🔋
     return Stack(
       children: [
         const Positioned.fill(

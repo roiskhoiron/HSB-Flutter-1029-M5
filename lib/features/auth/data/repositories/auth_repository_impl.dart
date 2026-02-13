@@ -5,6 +5,8 @@ import 'package:travel_planner/core/logging/app_logger.dart';
 import 'package:travel_planner/features/auth/data/datasources/local/auth_local_datasource.dart';
 import 'package:uuid/uuid.dart';
 
+// 💎 `AuthRepositoryImpl` ini sangat solid. Penggunaan `Result` wrapper untuk 
+// error handling menunjukkan kematangan arsitektur yang luar biasa! 🏗️🧪
 class AuthRepositoryImpl implements AuthRepository {
   final AuthLocalDataSource _localDataSource;
   final _uuid = const Uuid();
@@ -36,7 +38,7 @@ class AuthRepositoryImpl implements AuthRepository {
       }
 
       final user = User(
-        id: _uuid.v7(),
+        id: _uuid.v7(), // 💎 UUID v7 untuk id yang time-ordered adalah sentuhan teknis yang pro!
         name: name,
         email: normalizedEmail,
         createdAt: DateTime.now(),

@@ -1,5 +1,7 @@
 import 'package:travel_planner/core/result/result.dart';
 
+/// 💎 Implementasi `Email` sebagai Value Object dengan private constructor 
+/// adalah standar tinggi dalam Domain Driven Design (DDD). Luar biasa! 🏆🧠
 class Email {
   final String value;
 

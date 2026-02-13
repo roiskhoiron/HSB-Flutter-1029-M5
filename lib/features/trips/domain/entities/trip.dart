@@ -4,6 +4,8 @@ import 'package:travel_planner/features/trips/domain/value_objects/money.dart';
 
 enum TripStatus { planned, upcoming, completed }
 
+// 💎 Entity `Trip` ini sangat kaya (Rich Domain Model). Adanya getter seperti 
+// `isUpcoming` dan `durationInDays` memindahkan logic bisnis ke tempat yang tepat! 💎📊
 class Trip {
   final String id;
   final String title;
