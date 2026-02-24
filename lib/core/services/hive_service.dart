@@ -75,6 +75,7 @@ class HiveService {
     AppLogger.data('USERS (${usersBox.length}):');
     for (var key in usersBox.keys) {
       final user = usersBox.get(key);
+      //{Inline Review: Jangan log password plaintext di environment mana pun, termasuk debug log.}
       AppLogger.data(
         '  Key: $key, Email: ${user?.email}, PW: ${user?.password}, Name: ${user?.name}',
       );

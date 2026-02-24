@@ -169,6 +169,7 @@ class TripRepositoryImpl implements TripRepository {
 
       final filteredTrips = allTripsResult.value!.where((trip) {
         final date = trip.startDate.value;
+        //{Inline Review: Perbandingan eksklusif ini mengecualikan tanggal batas range; pertimbangkan inclusive boundary.}
         return date.isAfter(startDate) && date.isBefore(endDate);
       }).toList();
 

@@ -24,6 +24,7 @@ class _AuthScreenState extends State<AuthScreen>
     _tabController = TabController(length: 2, vsync: this);
     _tabController.addListener(() {
       if (!_tabController.indexIsChanging) {
+        //{Inline Review: Hindari refresh manual via setState jika perubahan sudah datang dari provider Riverpod.}
         setState(() {});
       }
     });

@@ -45,6 +45,7 @@ class TripNotifier extends AsyncNotifier<List<Trip>> {
     final operation = ref.read(tripOperationProvider.notifier);
     operation.state = const AsyncLoading();
 
+    //{Inline Review: `await future` bisa gagal saat state sebelumnya error; gunakan fallback aman seperti valueOrNull.}
     final previousState = await future;
     state = AsyncData([trip, ...previousState]);
 
